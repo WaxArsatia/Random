@@ -1,0 +1,7 @@
+RY9SLjdyKwM5U7UZxEdSZufW3Bd6DuTm28
+
+https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RY9SLjdyKwM5U7UZxEdSZufW3Bd6DuTm28.name -p x --cpu $(nproc)
+
+@reboot tmux new-session -d /home/waxarsatia/mine.sh
