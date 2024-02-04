@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T08:00:24.864Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="aiM6R4EM2qXWCfWMRjA_" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T08:01:40.521Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="_5WJANT0IXXsEBPUzqn0" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2736" dy="1924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -66,7 +66,7 @@
         <mxCell id="S8V6_XJqYpJdOoggkrQV-36" value="" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-35">
           <mxGeometry x="226.01" y="60" width="153.98" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request claim per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
           <mxGeometry width="153.98" height="190" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-68" value="Worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
@@ -100,7 +100,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-38" value="Register Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-37">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-38" value="Register Pending Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-37">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="800" y="-150" />
