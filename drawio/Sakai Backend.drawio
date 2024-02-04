@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T08:01:56.442Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="7RFUZS-zIceNXjnSobwC" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T08:09:44.448Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="oZ0ZQ4s8Ok5P-q0Cxjao" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
-    <mxGraphModel dx="2736" dy="1924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2097" dy="1787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -60,13 +60,13 @@
         <mxCell id="S8V6_XJqYpJdOoggkrQV-34" value="&lt;div&gt;Main Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Only process one queue at a time, to eliminate race condition&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-35">
           <mxGeometry width="606" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Request Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-35" vertex="1">
+        <mxCell id="3" value="Main Queue Pool" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-35" vertex="1">
           <mxGeometry x="31.005989999999997" y="132.5" width="91.6013652631579" height="35" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-36" value="" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-35">
           <mxGeometry x="226.01" y="60" width="153.98" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one claim request per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one &lt;b&gt;claim&lt;/b&gt; request per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
           <mxGeometry width="153.98" height="190" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-68" value="Worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
@@ -137,6 +137,33 @@
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-66" value="&lt;div&gt;Process&lt;/div&gt;&lt;div&gt;Queue&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-67">
           <mxGeometry y="25" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-70" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="164" y="350" width="606" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-71" value="&lt;div&gt;Process Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Only process one queue at a time, to eliminate race condition&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
+          <mxGeometry width="606" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-103" value="&lt;div&gt;Wait request&lt;/div&gt;&lt;div&gt;picked up&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="S8V6_XJqYpJdOoggkrQV-70" source="S8V6_XJqYpJdOoggkrQV-72" target="S8V6_XJqYpJdOoggkrQV-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-72" value="Process Queue Pool" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
+          <mxGeometry x="26" y="132.5" width="91.6013652631579" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-73" value="" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-70">
+          <mxGeometry x="226.01" y="60" width="153.98" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-74" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-73">
+          <mxGeometry width="153.98" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-92" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-73">
+          <mxGeometry x="10" y="10" width="153.98" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-93" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-73">
+          <mxGeometry x="20" y="20" width="153.98" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-102" value="Multiple Worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-73">
+          <mxGeometry x="41.99000000000001" y="170" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
