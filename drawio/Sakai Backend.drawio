@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T08:23:53.060Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="eVDrlOiODQbXdtHVpcYb" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T08:36:48.374Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="q1K1BaWQwurUbU48xEcd" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
-    <mxGraphModel dx="2537" dy="2029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3240" dy="2417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -139,7 +139,7 @@
           <mxGeometry y="25" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-70" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="164" y="320" width="606" height="300" as="geometry" />
+          <mxGeometry x="160" y="430" width="606" height="300" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-71" value="&lt;div&gt;Process Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Queue processed by many worker at a time, to faster update data&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
           <mxGeometry width="606" height="300" as="geometry" />
@@ -168,11 +168,47 @@
         <mxCell id="S8V6_XJqYpJdOoggkrQV-105" value="Condition" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-73">
           <mxGeometry x="56.99000000000001" y="56.904761904761955" width="80" height="76.19047619047619" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-107" value="Update Queue DB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
-          <mxGeometry x="515.9978947368421" y="120" width="66.97894736842103" height="60" as="geometry" />
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-107" value="Update Pending and Queue DB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
+          <mxGeometry x="516" y="60" width="74" height="70" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-108" value="Success" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="S8V6_XJqYpJdOoggkrQV-70" source="S8V6_XJqYpJdOoggkrQV-93" target="S8V6_XJqYpJdOoggkrQV-107">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-117" value="Update Queue DB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
+          <mxGeometry x="516" y="195" width="74" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-118" value="Failed" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="S8V6_XJqYpJdOoggkrQV-70" source="S8V6_XJqYpJdOoggkrQV-93" target="S8V6_XJqYpJdOoggkrQV-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-109" value="Pending DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="596" y="260" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-110" value="&lt;div&gt;Add Pending Update Data&lt;br&gt;&lt;/div&gt;&lt;div&gt;to Pending DB&lt;br&gt;&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-107" target="S8V6_XJqYpJdOoggkrQV-109">
+          <mxGeometry x="0.4896" y="-8" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="410" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-111" value="&lt;div&gt;Update Queue Status&lt;/div&gt;&lt;div&gt;to Success&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-107" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry x="-0.0607" relative="1" as="geometry">
+            <mxPoint x="810" y="-120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="525" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-119" value="&lt;div&gt;Update Queue Status&lt;/div&gt;&lt;div&gt;to Failed&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-117" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry x="-0.0492" relative="1" as="geometry">
+            <mxPoint x="950" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="910" y="660" />
+              <mxPoint x="910" y="-340" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
