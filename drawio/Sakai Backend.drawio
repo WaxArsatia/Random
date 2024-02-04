@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T07:02:14.048Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="p0ITzLo7QIhexn4x1Ohz" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T07:03:03.364Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="F9Tv0dc87jjheVwqpLQd" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -71,16 +71,13 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-28" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="476" y="-160" width="250" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-31" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-120" y="-100" width="120" height="300" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-23" value="API Routes" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-31">
           <mxGeometry width="120" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="API Routes" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="POST API Routes" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
           <mxGeometry width="120" height="300" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-17" value="Claim" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
