@@ -1,29 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T06:56:03.053Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="7zfycezKN92M1PehIvgt" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T07:02:08.160Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="53yhwu5oselTxVUNXdQQ" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-23" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-30" y="-90" width="120" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
-          <mxGeometry width="120" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-22" value="API Routes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
-          <mxGeometry x="8" y="10" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="2" value="Deposit" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry width="50" height="35" as="geometry" />
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="463" y="-100" width="120" height="300" as="geometry" />
         </mxCell>
         <mxCell id="3" value="Request Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="244" y="43" width="68" height="35" as="geometry" />
+          <mxGeometry x="190" y="43" width="68" height="35" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Condition" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="481" y="43" width="84" height="35" as="geometry" />
         </mxCell>
         <mxCell id="5" value="Process2" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="650" width="76" height="35" as="geometry" />
+          <mxGeometry x="710" y="-10" width="76" height="35" as="geometry" />
         </mxCell>
         <mxCell id="6" value="Error" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="820" y="200" width="51" height="35" as="geometry" />
@@ -36,11 +27,6 @@
         </mxCell>
         <mxCell id="9" value="Done" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1270" y="43" width="51" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="Receive API Request" style="curved=1;startArrow=none;endArrow=block;exitX=1.0003333282470703;exitY=0.4857142857142857;entryX=0.003431264091940487;entryY=0.4857142857142857;" parent="1" source="2" target="3" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="11" value="Validate Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9975488887113684;exitY=0.4857142857142857;entryX=0.005952244713192894;entryY=0.4857142857142857;" parent="1" source="3" target="4" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -85,11 +71,31 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-28" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="476" y="-160" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-120" y="-100" width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-23" value="API Routes" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-31">
+          <mxGeometry width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="API Routes" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
+          <mxGeometry width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-17" value="Claim" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
+          <mxGeometry x="30" y="190" width="50" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="Deposit" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-31" vertex="1">
+          <mxGeometry x="30" y="90" width="50" height="35" as="geometry" />
+        </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-19" value="Receive API Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-17" value="Claim" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry y="110" width="50" height="35" as="geometry" />
+        <mxCell id="10" value="Receive API Request" style="curved=1;startArrow=none;endArrow=block;exitX=1.0003333282470703;exitY=0.4857142857142857;entryX=0.003431264091940487;entryY=0.4857142857142857;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
