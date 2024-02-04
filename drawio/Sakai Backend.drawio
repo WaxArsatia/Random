@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T08:09:44.448Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="oZ0ZQ4s8Ok5P-q0Cxjao" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T08:14:31.518Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="Xfc4vMglfZ6kYkt0EnRA" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
-    <mxGraphModel dx="2097" dy="1787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2422" dy="1787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,22 +69,19 @@
         <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one &lt;b&gt;claim&lt;/b&gt; request per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
           <mxGeometry width="153.98" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-68" value="Worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
-          <mxGeometry x="46.99000000000001" y="153" width="60" height="30" as="geometry" />
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-68" value="Single Worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
+          <mxGeometry x="26.99000000000001" y="153" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5" value="Send to Process Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-35" vertex="1">
           <mxGeometry x="505.9978947368421" y="60" width="66.97894736842103" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-41" value="Condition" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-53">
-          <mxGeometry x="263" y="111.9047619047619" width="80" height="76.19047619047619" as="geometry" />
-        </mxCell>
-        <mxCell id="11" value="Validate Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9975488887113684;exitY=0.4857142857142857;" parent="S8V6_XJqYpJdOoggkrQV-53" source="3" target="S8V6_XJqYpJdOoggkrQV-41" edge="1">
+        <mxCell id="11" value="Validate Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9975488887113684;exitY=0.4857142857142857;" parent="S8V6_XJqYpJdOoggkrQV-35" source="3" target="S8V6_XJqYpJdOoggkrQV-27" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="259.1174752469137" y="149.6068413860146" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="12" value="Valid" style="curved=1;startArrow=none;endArrow=block;" parent="S8V6_XJqYpJdOoggkrQV-53" source="S8V6_XJqYpJdOoggkrQV-41" target="5" edge="1">
+        <mxCell id="12" value="Valid" style="curved=1;startArrow=none;endArrow=block;" parent="S8V6_XJqYpJdOoggkrQV-35" source="S8V6_XJqYpJdOoggkrQV-27" target="5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="436" y="130" />
@@ -92,6 +89,9 @@
             <mxPoint x="428.62358884222135" y="196.47140096618364" as="sourcePoint" />
             <mxPoint x="577.9678947368423" y="150" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-41" value="Condition" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-53">
+          <mxGeometry x="263" y="111.9047619047619" width="80" height="76.19047619047619" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-39" value="Check Existing Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-27" target="S8V6_XJqYpJdOoggkrQV-37">
           <mxGeometry relative="1" as="geometry">
@@ -121,7 +121,7 @@
             <mxPoint x="1040" y="-72.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="13" value="Invalid" style="curved=1;startArrow=none;endArrow=block;entryX=-0.008987015368891698;entryY=0.5;" parent="1" source="S8V6_XJqYpJdOoggkrQV-41" target="6" edge="1">
+        <mxCell id="13" value="Invalid" style="curved=1;startArrow=none;endArrow=block;entryX=-0.008987015368891698;entryY=0.5;" parent="1" source="S8V6_XJqYpJdOoggkrQV-27" target="6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="608" y="103" />
@@ -139,12 +139,12 @@
           <mxGeometry y="25" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-70" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="164" y="350" width="606" height="300" as="geometry" />
+          <mxGeometry x="164" y="320" width="606" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-71" value="&lt;div&gt;Process Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Only process one queue at a time, to eliminate race condition&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-71" value="&lt;div&gt;Process Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Queue processed by many worker at a time, to faster update data&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
           <mxGeometry width="606" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-103" value="&lt;div&gt;Wait request&lt;/div&gt;&lt;div&gt;picked up&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="S8V6_XJqYpJdOoggkrQV-70" source="S8V6_XJqYpJdOoggkrQV-72" target="S8V6_XJqYpJdOoggkrQV-74">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-103" value="&lt;div&gt;Wait request to&lt;br&gt;&lt;/div&gt;&lt;div&gt;picked up&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="S8V6_XJqYpJdOoggkrQV-70" source="S8V6_XJqYpJdOoggkrQV-72" target="S8V6_XJqYpJdOoggkrQV-74">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-72" value="Process Queue Pool" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-70">
