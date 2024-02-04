@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T07:56:58.794Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="u9Dwje09dK5PU3Lit3hI" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T08:00:24.864Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="aiM6R4EM2qXWCfWMRjA_" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
-    <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2736" dy="1924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -50,9 +50,6 @@
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-37" value="Queue DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="770" y="-390" width="80" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-64" value="Update Queue to Complete" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-40" target="S8V6_XJqYpJdOoggkrQV-37">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-53" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="164" y="-100" width="606" height="300" as="geometry" />
