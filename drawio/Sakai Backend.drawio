@@ -1,62 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T07:03:03.364Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="F9Tv0dc87jjheVwqpLQd" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T07:56:00.145Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="HagQNJec0RV7a4HqBoQm" version="22.1.21" type="github">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="463" y="-100" width="120" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="3" value="Request Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="190" y="43" width="68" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="Condition" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="481" y="43" width="84" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="5" value="Process2" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="710" y="-10" width="76" height="35" as="geometry" />
-        </mxCell>
         <mxCell id="6" value="Error" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="820" y="200" width="51" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="Process3" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="875" width="76" height="35" as="geometry" />
+          <mxGeometry x="970" y="120" width="51" height="35" as="geometry" />
         </mxCell>
         <mxCell id="8" value="End" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1178" y="43" width="41" height="35" as="geometry" />
+          <mxGeometry x="1370" y="32.5" width="41" height="35" as="geometry" />
         </mxCell>
         <mxCell id="9" value="Done" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1270" y="43" width="51" height="35" as="geometry" />
+          <mxGeometry x="1462" y="32.5" width="51" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="Validate Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9975488887113684;exitY=0.4857142857142857;entryX=0.005952244713192894;entryY=0.4857142857142857;" parent="1" source="3" target="4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="12" value="Valid" style="curved=1;startArrow=none;endArrow=block;exitX=0.9164739362999837;exitY=-0.014285714285714285;entryX=-0.0015352650692588405;entryY=0.5;" parent="1" source="4" target="5" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="608" y="18" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="13" value="Invalid" style="curved=1;startArrow=none;endArrow=block;exitX=0.9164739362999837;exitY=0.9857142857142858;entryX=-0.008987015368891698;entryY=0.5;" parent="1" source="4" target="6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="608" y="103" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="14" value="Execute Logic" style="curved=1;startArrow=none;endArrow=block;exitX=0.9982454902247379;exitY=0.5;entryX=-0.0006579850849352385;entryY=0.5;" parent="1" source="5" target="7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="15" value="Generate Response" style="curved=1;startArrow=none;endArrow=block;exitX=0.9991227702090615;exitY=0.5;entryX=0.010569037460699314;entryY=0.29939929732254394;" parent="1" source="7" target="8" edge="1">
+        <mxCell id="15" value="Generate Response" style="curved=1;startArrow=none;endArrow=block;entryX=0.010569037460699314;entryY=0.29939929732254394;" parent="1" source="S8V6_XJqYpJdOoggkrQV-40" target="8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1065" y="18" />
             </Array>
+            <mxPoint x="1116" y="-72.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="16" value="Generate Error Response" style="curved=1;startArrow=none;endArrow=block;exitX=0.9870914010440602;exitY=0.5;entryX=0.010569037460699314;entryY=0.6720292741060275;" parent="1" source="6" target="8" edge="1">
@@ -77,22 +39,104 @@
         <mxCell id="S8V6_XJqYpJdOoggkrQV-23" value="API Routes" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-31">
           <mxGeometry width="120" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="POST API Routes" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-21" value="Endpoint&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST API Routes&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
           <mxGeometry width="120" height="300" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-17" value="Claim" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-23">
-          <mxGeometry x="30" y="190" width="50" height="35" as="geometry" />
+          <mxGeometry x="30" y="178" width="50" height="35" as="geometry" />
         </mxCell>
         <mxCell id="2" value="Deposit" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-31" vertex="1">
           <mxGeometry x="30" y="90" width="50" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-19" value="Receive API Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="3">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-37" value="Queue DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="770" y="-390" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-64" value="Update Queue to Complete" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-40" target="S8V6_XJqYpJdOoggkrQV-37">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-53" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="164" y="-100" width="606" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-35" value="" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-53">
+          <mxGeometry width="606" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-34" value="&lt;div&gt;Main Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Only process one queue at a time, to eliminate race condition&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-35">
+          <mxGeometry width="606" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Request Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-35" vertex="1">
+          <mxGeometry x="31.005989999999997" y="132.5" width="91.6013652631579" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-36" value="" style="group" vertex="1" connectable="0" parent="S8V6_XJqYpJdOoggkrQV-35">
+          <mxGeometry x="226.01" y="60" width="153.98" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-27" value="&lt;div&gt;Check duplicate request&lt;/div&gt;&lt;div&gt;Only allow one request per kind per wallet&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-36">
+          <mxGeometry width="153.98" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Send to Process Queue" style="whiteSpace=wrap;strokeWidth=2;" parent="S8V6_XJqYpJdOoggkrQV-35" vertex="1">
+          <mxGeometry x="505.9978947368421" y="60" width="66.97894736842103" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-41" value="Condition" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-53">
+          <mxGeometry x="263" y="111.9047619047619" width="80" height="76.19047619047619" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Validate Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9975488887113684;exitY=0.4857142857142857;" parent="S8V6_XJqYpJdOoggkrQV-53" source="3" target="S8V6_XJqYpJdOoggkrQV-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="259.1174752469137" y="149.6068413860146" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Valid" style="curved=1;startArrow=none;endArrow=block;" parent="S8V6_XJqYpJdOoggkrQV-53" source="S8V6_XJqYpJdOoggkrQV-41" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="436" y="130" />
+            </Array>
+            <mxPoint x="428.62358884222135" y="196.47140096618364" as="sourcePoint" />
+            <mxPoint x="577.9678947368423" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-39" value="Check Existing Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-27" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="-160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-38" value="Register Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="-150" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="10" value="Receive API Request" style="curved=1;startArrow=none;endArrow=block;exitX=1.0003333282470703;exitY=0.4857142857142857;entryX=0.003431264091940487;entryY=0.4857142857142857;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-19" value="Receive API Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="to Process Queue" style="curved=1;startArrow=none;endArrow=block;exitX=0.9982454902247379;exitY=0.5;" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1040" y="-72.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Invalid" style="curved=1;startArrow=none;endArrow=block;entryX=-0.008987015368891698;entryY=0.5;" parent="1" source="S8V6_XJqYpJdOoggkrQV-41" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="608" y="103" />
+            </Array>
+            <mxPoint x="523.2208308184149" y="63.52454106280197" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-67" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="970" y="-110" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-40" value="" style="triangle;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-67">
+          <mxGeometry width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-66" value="&lt;div&gt;Process&lt;/div&gt;&lt;div&gt;Queue&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-67">
+          <mxGeometry y="25" width="70" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
