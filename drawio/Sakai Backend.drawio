@@ -1,38 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2024-03-13T22:03:50.345Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="4qHDln-8G3InxAKVEjkE" version="24.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-13T22:25:21.018Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="nysSq02Cm4ghMNMhmQuP" version="24.0.2" type="github" pages="2">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6" value="Error" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="970" y="120" width="51" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="8" value="End" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1370" y="32.5" width="41" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="Done" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1462" y="32.5" width="51" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="15" value="Generate Response" style="curved=1;startArrow=none;endArrow=block;entryX=0.010569037460699314;entryY=0.29939929732254394;" parent="1" source="S8V6_XJqYpJdOoggkrQV-40" target="8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1065" y="18" />
-            </Array>
-            <mxPoint x="1116" y="-72.5" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="16" value="Generate Error Response" style="curved=1;startArrow=none;endArrow=block;exitX=0.9870914010440602;exitY=0.5;entryX=0.010569037460699314;entryY=0.6720292741060275;" parent="1" source="6" target="8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1065" y="103" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1.0162601005740282;exitY=0.4857142857142857;entryX=-0.006535997577742034;entryY=0.4857142857142857;" parent="1" source="8" target="9" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-31" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-120" y="-100" width="120" height="300" as="geometry" />
         </mxCell>
@@ -90,21 +61,32 @@
             <mxPoint x="577.9678947368423" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="AXrVhBjw7zOwuISEPXL_-28" value="Update Queue DB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="S8V6_XJqYpJdOoggkrQV-35">
+          <mxGeometry x="505.9978947368421" y="190" width="66.97894736842103" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="2. Invalid" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="S8V6_XJqYpJdOoggkrQV-35" source="S8V6_XJqYpJdOoggkrQV-27" target="AXrVhBjw7zOwuISEPXL_-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="466" y="180" />
+            </Array>
+            <mxPoint x="359.2208308184149" y="163.52454106280197" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-41" value="Condition" style="rhombus;whiteSpace=wrap;html=1;" parent="S8V6_XJqYpJdOoggkrQV-53" vertex="1">
           <mxGeometry x="263" y="111.9047619047619" width="80" height="76.19047619047619" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-39" value="1. Check Existing Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="S8V6_XJqYpJdOoggkrQV-27" target="S8V6_XJqYpJdOoggkrQV-37" edge="1">
-          <mxGeometry x="0.293" y="-25" relative="1" as="geometry">
+          <mxGeometry x="0.1654" y="18" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="780" y="160" />
+              <mxPoint x="630" y="220" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-38" value="1. Register Pending Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-37" edge="1">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-38" value="&lt;div&gt;1.Update Queue Status&lt;/div&gt;&lt;div&gt;to Processing&lt;br&gt;&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-37" edge="1">
           <mxGeometry x="-0.2965" y="-48" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="910" y="60" />
+              <mxPoint x="990" y="30" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
@@ -123,16 +105,8 @@
             <mxPoint x="1040" y="-72.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="13" value="2. Invalid" style="curved=1;startArrow=none;endArrow=block;entryX=-0.008987015368891698;entryY=0.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="S8V6_XJqYpJdOoggkrQV-27" target="6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="608" y="103" />
-            </Array>
-            <mxPoint x="523.2208308184149" y="63.52454106280197" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-67" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="970" y="-110" width="90" height="90" as="geometry" />
+          <mxGeometry x="1040" y="-50" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-40" value="" style="triangle;whiteSpace=wrap;html=1;align=left;" parent="S8V6_XJqYpJdOoggkrQV-67" vertex="1">
           <mxGeometry width="90" height="90" as="geometry" />
@@ -208,6 +182,11 @@
             <Array as="points">
               <mxPoint x="910" y="660" />
             </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AXrVhBjw7zOwuISEPXL_-29" value="&lt;div&gt;Update Queue Status&lt;/div&gt;&lt;div&gt;to Invalid&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="AXrVhBjw7zOwuISEPXL_-28" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry x="0.2675" y="-30" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
