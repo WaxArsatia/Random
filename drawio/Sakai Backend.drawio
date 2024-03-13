@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-13T22:25:21.018Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="nysSq02Cm4ghMNMhmQuP" version="24.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-13T22:33:57.588Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="S9Dor1AJ0iTZGjvZfVhW" version="24.0.2" type="github" pages="2">
   <diagram name="Logic" id="onQaG1SxVY_JN8vI7sOl">
     <mxGraphModel dx="2284" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -91,12 +91,12 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="10" value="Receive API Request" style="curved=1;startArrow=none;endArrow=block;exitX=1.0003333282470703;exitY=0.4857142857142857;entryX=0.003431264091940487;entryY=0.4857142857142857;" parent="1" source="2" target="3" edge="1">
+        <mxCell id="10" value="2. Send to Main Queue" style="curved=1;startArrow=none;endArrow=block;exitX=1.0003333282470703;exitY=0.4857142857142857;entryX=0.003431264091940487;entryY=0.4857142857142857;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S8V6_XJqYpJdOoggkrQV-19" value="Receive API Request" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="3" edge="1">
+        <mxCell id="S8V6_XJqYpJdOoggkrQV-19" value="2. Send to Main Queue" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="14" value="2. Send to Process Queue" style="curved=1;startArrow=none;endArrow=block;exitX=0.9982454902247379;exitY=0.5;" parent="1" source="5" target="S8V6_XJqYpJdOoggkrQV-40" edge="1">
@@ -160,7 +160,7 @@
           <mxGeometry x="596" y="260" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="S8V6_XJqYpJdOoggkrQV-110" value="1. Add Pending Update Data&lt;br&gt;&lt;div&gt;to Pending DB&lt;br&gt;&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="S8V6_XJqYpJdOoggkrQV-107" target="S8V6_XJqYpJdOoggkrQV-109" edge="1">
-          <mxGeometry x="0.4896" y="-8" relative="1" as="geometry">
+          <mxGeometry x="0.2093" y="-12" relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="620" y="410" />
             </Array>
@@ -187,6 +187,25 @@
         </mxCell>
         <mxCell id="AXrVhBjw7zOwuISEPXL_-29" value="&lt;div&gt;Update Queue Status&lt;/div&gt;&lt;div&gt;to Invalid&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="AXrVhBjw7zOwuISEPXL_-28" target="S8V6_XJqYpJdOoggkrQV-37">
           <mxGeometry x="0.2675" y="-30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AXrVhBjw7zOwuISEPXL_-31" value="&lt;div&gt;1. Register Queue Entries&lt;/div&gt;&lt;div&gt;as status pending&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="S8V6_XJqYpJdOoggkrQV-17" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry x="0.0982" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-65" y="390" />
+              <mxPoint x="720" y="390" />
+              <mxPoint x="720" y="320" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AXrVhBjw7zOwuISEPXL_-35" value="&lt;div&gt;1. Register Queue Entries&lt;/div&gt;&lt;div&gt;as status pending&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="2" target="S8V6_XJqYpJdOoggkrQV-37">
+          <mxGeometry x="0.1624" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-65" y="240" />
+              <mxPoint x="870" y="240" />
+            </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
