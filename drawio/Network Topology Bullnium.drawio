@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-06T08:47:33.060Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="tWeCtsFB0Oxvt6QngAAq" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-06T08:48:56.307Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="HQQye4YDY0Z9MaXjWEnc" version="24.2.2" type="github">
   <diagram name="Page-1" id="BOJ9KKiEwAJLylXzMosl">
     <mxGraphModel dx="1024" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="iXWKgMwPZLDoYIevhSrR-10" value="Ether 3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-1" target="iXWKgMwPZLDoYIevhSrR-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iXWKgMwPZLDoYIevhSrR-14" value="Ether 4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-1" target="iXWKgMwPZLDoYIevhSrR-13" edge="1">
+        <mxCell id="iXWKgMwPZLDoYIevhSrR-14" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-6" target="iXWKgMwPZLDoYIevhSrR-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-1" value="Router A" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
@@ -45,7 +45,7 @@
           <mxGeometry x="435" y="430" width="50" height="39" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-13" value="AP Rumah" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/wireless/Access_Point_Indoor.svg;" parent="1" vertex="1">
-          <mxGeometry x="120" y="272.2" width="36.6" height="54.6" as="geometry" />
+          <mxGeometry x="221.7" y="330" width="36.6" height="54.6" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iXWKgMwPZLDoYIevhSrR-16" target="iXWKgMwPZLDoYIevhSrR-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -79,7 +79,7 @@
             <mxPoint x="410" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-6" value="Ether 4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="1" source="_nAM6MPzsScXtvi9Z2kL-2" target="iXWKgMwPZLDoYIevhSrR-6">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-6" value="&lt;div&gt;Ether 3&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="1" source="_nAM6MPzsScXtvi9Z2kL-2" target="iXWKgMwPZLDoYIevhSrR-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="570" y="319" as="sourcePoint" />
             <mxPoint x="614" y="430" as="targetPoint" />
