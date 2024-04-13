@@ -1,2 +1,0 @@
-wget -q -O - https://download.bsc-snapshot.workers.dev/geth-20220904.tar.lz4 | tar -I lz4 -xvf -
-aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/geth-20220904.tar.lz4 -o geth.tar.lz4
