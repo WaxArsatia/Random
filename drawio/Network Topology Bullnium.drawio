@@ -1,16 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T05:15:04.941Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="NEsXw30rRNiM3j56NoxY" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-14T10:37:35.374Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="ey8rX7YiBvq67rlRnkj2" version="24.2.3" type="github">
   <diagram name="Page-1" id="BOJ9KKiEwAJLylXzMosl">
-    <mxGraphModel dx="1024" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1304" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-7" value="VRRP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-7" value="VRRP" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="325" y="255.6" width="270" height="87.8" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-10" value="Ether 3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-1" target="iXWKgMwPZLDoYIevhSrR-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="iXWKgMwPZLDoYIevhSrR-14" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-6" target="iXWKgMwPZLDoYIevhSrR-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-1" value="Router A" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
@@ -38,14 +35,11 @@
         <mxCell id="iXWKgMwPZLDoYIevhSrR-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iXWKgMwPZLDoYIevhSrR-6" target="iXWKgMwPZLDoYIevhSrR-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iXWKgMwPZLDoYIevhSrR-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iXWKgMwPZLDoYIevhSrR-13" target="iXWKgMwPZLDoYIevhSrR-18" edge="1">
+        <mxCell id="1NMXxt7HMZeYprnoMtDu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iXWKgMwPZLDoYIevhSrR-6" target="iXWKgMwPZLDoYIevhSrR-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-6" value="Switch" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
           <mxGeometry x="435" y="430" width="50" height="39" as="geometry" />
-        </mxCell>
-        <mxCell id="iXWKgMwPZLDoYIevhSrR-13" value="AP Rumah" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/wireless/Access_Point_Indoor.svg;" parent="1" vertex="1">
-          <mxGeometry x="221.7" y="360" width="36.6" height="54.6" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iXWKgMwPZLDoYIevhSrR-16" target="iXWKgMwPZLDoYIevhSrR-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -60,26 +54,26 @@
           <mxGeometry x="438.69999999999993" y="554.6" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
         <mxCell id="iXWKgMwPZLDoYIevhSrR-18" value="PVE 3" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
-          <mxGeometry x="137.4" y="560" width="42.599999999999994" height="54" as="geometry" />
+          <mxGeometry x="580" y="554.6" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-2" value="Router B" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="1">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-2" value="Router B" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
           <mxGeometry x="485" y="280" width="50" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-3" value="Ether 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="1" source="iXWKgMwPZLDoYIevhSrR-3" target="_nAM6MPzsScXtvi9Z2kL-2">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-3" value="Ether 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-3" target="_nAM6MPzsScXtvi9Z2kL-2" edge="1">
           <mxGeometry x="0.6066" y="-25" relative="1" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="352.8" y="140" as="sourcePoint" />
             <mxPoint x="452.8" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-4" value="Ether 2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="1" source="iXWKgMwPZLDoYIevhSrR-2" target="_nAM6MPzsScXtvi9Z2kL-2">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-4" value="Ether 2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;labelBackgroundColor=#7EA6E0;" parent="1" source="iXWKgMwPZLDoYIevhSrR-2" target="_nAM6MPzsScXtvi9Z2kL-2" edge="1">
           <mxGeometry x="0.3846" y="15" relative="1" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="610" y="190" as="sourcePoint" />
             <mxPoint x="410" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_nAM6MPzsScXtvi9Z2kL-6" value="&lt;div&gt;Ether 3&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="1" source="_nAM6MPzsScXtvi9Z2kL-2" target="iXWKgMwPZLDoYIevhSrR-6">
+        <mxCell id="_nAM6MPzsScXtvi9Z2kL-6" value="&lt;div&gt;Ether 3&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#7EA6E0;" parent="1" source="_nAM6MPzsScXtvi9Z2kL-2" target="iXWKgMwPZLDoYIevhSrR-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="570" y="319" as="sourcePoint" />
             <mxPoint x="614" y="430" as="targetPoint" />
