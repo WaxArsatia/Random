@@ -1,17 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2024-04-28T17:28:38.697Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="wlEcgqnXqudYfZSLfRQp" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-28T17:29:52.319Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="gvLwLw1Ltmw8xRR7bnX5" version="24.3.0" type="github">
   <diagram name="Page-1" id="_gEOEPybZv3CiejzkFEf">
     <mxGraphModel dx="1434" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6h2cYbVP-Or3ictji5u8-1" value="var listAngka" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="6h2cYbVP-Or3ictji5u8-5" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="260" width="290" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="6h2cYbVP-Or3ictji5u8-2" value="tipedata array" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="115" y="310" width="220" height="150" as="geometry" />
+        <mxCell id="6h2cYbVP-Or3ictji5u8-1" value="var listAngka" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-5">
+          <mxGeometry width="290" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="6h2cYbVP-Or3ictji5u8-3" value="1, 2, 3, 7, 12, 5" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="165" y="350" width="120" height="80" as="geometry" />
+        <mxCell id="6h2cYbVP-Or3ictji5u8-2" value="tipedata array int" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-5">
+          <mxGeometry x="35" y="50" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6h2cYbVP-Or3ictji5u8-3" value="1, 2, 3, 7, 12, 5" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-5">
+          <mxGeometry x="85" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6h2cYbVP-Or3ictji5u8-6" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="260" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6h2cYbVP-Or3ictji5u8-7" value="var listAngka" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-6">
+          <mxGeometry width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6h2cYbVP-Or3ictji5u8-8" value="tipedata array string" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-6">
+          <mxGeometry x="35" y="50" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6h2cYbVP-Or3ictji5u8-9" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="6h2cYbVP-Or3ictji5u8-6">
+          <mxGeometry x="85" y="90" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
