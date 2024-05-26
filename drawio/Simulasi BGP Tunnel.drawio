@@ -1,29 +1,29 @@
-<mxfile host="app.diagrams.net" modified="2024-05-22T07:51:49.992Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="McP7a55l5vQWWIWD8W9h" version="24.4.2" type="github">
-  <diagram name="Page-1" id="0g_wWTmyQGgwD8oNdjpy">
+<mxfile host="app.diagrams.net" modified="2024-05-26T15:27:24.651Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="zaete4rKTh0TBzKGGbcP" version="24.4.8" type="github" pages="2">
+  <diagram name="Initial Topology" id="0g_wWTmyQGgwD8oNdjpy">
     <mxGraphModel dx="1434" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="L936vOeawLStrRDUiUTu-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Server Network&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Server Network&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
           <mxGeometry x="415" y="460" width="420" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-5" value="172.16.1.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-1" target="L936vOeawLStrRDUiUTu-4">
+        <mxCell id="L936vOeawLStrRDUiUTu-5" value="172.16.1.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="L936vOeawLStrRDUiUTu-1" target="L936vOeawLStrRDUiUTu-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-1" target="L936vOeawLStrRDUiUTu-3">
+        <mxCell id="L936vOeawLStrRDUiUTu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="L936vOeawLStrRDUiUTu-1" target="L936vOeawLStrRDUiUTu-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="625" y="210" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-1" value="Third Party Router&lt;br&gt;BGP Server" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-1" value="Third Party Router&lt;br&gt;BGP Server" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
           <mxGeometry x="190" y="300.5" width="50" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-6" value="172.17.1.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-4">
+        <mxCell id="L936vOeawLStrRDUiUTu-6" value="172.17.1.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-8" value="192.168.0.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-1">
+        <mxCell id="L936vOeawLStrRDUiUTu-8" value="192.168.0.0/30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="625" y="210" />
@@ -31,36 +31,85 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-13" value="10.0.0.1/24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-12">
+        <mxCell id="L936vOeawLStrRDUiUTu-13" value="10.0.0.1/24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="L936vOeawLStrRDUiUTu-3" target="L936vOeawLStrRDUiUTu-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-3" value="Ogan Ilir Router" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-3" value="Ogan Ilir Router" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
           <mxGeometry x="600" y="300.5" width="50" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-4" value="&lt;div&gt;WAN&lt;/div&gt;&lt;div&gt;Simulation&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-4" value="&lt;div&gt;WAN&lt;/div&gt;&lt;div&gt;Simulation&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="280" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-9" value="BGP Tunnel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-9" value="BGP Tunnel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="375" y="220" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-11" value="&lt;div&gt;Server 1&lt;/div&gt;&lt;div&gt;10.0.0.101/24&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-11" value="&lt;div&gt;Server 1&lt;/div&gt;&lt;div&gt;10.0.0.101/24&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
           <mxGeometry x="490" y="530" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-14" value="&lt;div&gt;Server 2&lt;br&gt;&lt;/div&gt;&lt;div&gt;10.0.0.102/24&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-14" value="&lt;div&gt;Server 2&lt;br&gt;&lt;/div&gt;&lt;div&gt;10.0.0.102/24&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
           <mxGeometry x="690" y="530" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L936vOeawLStrRDUiUTu-16" target="L936vOeawLStrRDUiUTu-1">
+        <mxCell id="L936vOeawLStrRDUiUTu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="L936vOeawLStrRDUiUTu-16" target="L936vOeawLStrRDUiUTu-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="85" y="320" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-16" value="Client" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.workstation_client" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-16" value="Client" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.workstation_client" parent="1" vertex="1">
           <mxGeometry x="70" y="510" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="L936vOeawLStrRDUiUTu-18" value="&lt;div&gt;Client Harus bisa mengakses Server&lt;/div&gt;&lt;div&gt;via Third Party Router&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="L936vOeawLStrRDUiUTu-18" value="&lt;div&gt;Client Harus bisa mengakses Server&lt;/div&gt;&lt;div&gt;via Third Party Router&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="110" y="460" width="230" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Plan Topology" id="lQSKgm2g_5u4YFw0XaeH">
+    <mxGraphModel dx="1434" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="qeUSvuvd_j6vOPOuIPSr-0" />
+        <mxCell id="qeUSvuvd_j6vOPOuIPSr-1" parent="qeUSvuvd_j6vOPOuIPSr-0" />
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qeUSvuvd_j6vOPOuIPSr-1" source="l-KEXW0Qbcvo-aDXbFFH-0" target="l-KEXW0Qbcvo-aDXbFFH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Advertise IP Public&lt;/font&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qeUSvuvd_j6vOPOuIPSr-1" source="l-KEXW0Qbcvo-aDXbFFH-0" target="l-KEXW0Qbcvo-aDXbFFH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-23" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Advertise IP Public&lt;br&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="qeUSvuvd_j6vOPOuIPSr-1" source="l-KEXW0Qbcvo-aDXbFFH-0" target="l-KEXW0Qbcvo-aDXbFFH-5">
+          <mxGeometry x="0.2413" y="-55" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-0" value="Router Ogan Ilir" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="370" y="390" width="50" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-1" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;PGAS IX&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AS: 56258&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="240" y="180" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-2" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;IconNet IIX&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AS: 9341&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="460" y="180" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qeUSvuvd_j6vOPOuIPSr-1" source="l-KEXW0Qbcvo-aDXbFFH-5" target="l-KEXW0Qbcvo-aDXbFFH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-5" value="SG BGP Tunnel" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="130" y="111" width="50" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qeUSvuvd_j6vOPOuIPSr-1" source="l-KEXW0Qbcvo-aDXbFFH-16" target="l-KEXW0Qbcvo-aDXbFFH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp;Local Content&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="760" y="40" width="230" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-18" value="detik.com" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="800" y="96" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-20" value="..." style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="880" y="96" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="l-KEXW0Qbcvo-aDXbFFH-22" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;Router Ogan Ilir Spec&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;AS: 141655&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;IP Public: 103.162.35.0/24&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="qeUSvuvd_j6vOPOuIPSr-1">
+          <mxGeometry x="260" y="470" width="275" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
