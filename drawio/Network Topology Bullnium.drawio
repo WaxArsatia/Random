@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-02T09:19:41.541Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="cQGCystIKU0h6eC0lNGC" version="24.6.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-07-02T09:23:31.522Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="L7ZBZKokSUQFSDQ515Wb" version="24.6.4" type="github" pages="3">
   <diagram name="Cluster 3" id="IGpD8P-vtyN4zuEWLhdS">
     <mxGraphModel dx="1434" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -21,7 +21,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bHFfbH5_fKz2R0A10Ziq-7" value="ISP Biznet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="bHFfbH5_fKz2R0A10Ziq-1">
+        <mxCell id="bHFfbH5_fKz2R0A10Ziq-7" value="ISP B" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="bHFfbH5_fKz2R0A10Ziq-1">
           <mxGeometry x="600" y="140" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bHFfbH5_fKz2R0A10Ziq-8" value="Ether 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;labelBackgroundColor=#7EA6E0;" edge="1" parent="bHFfbH5_fKz2R0A10Ziq-1" source="bHFfbH5_fKz2R0A10Ziq-9" target="bHFfbH5_fKz2R0A10Ziq-5">
@@ -29,7 +29,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bHFfbH5_fKz2R0A10Ziq-9" value="ISP Oxygen" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="bHFfbH5_fKz2R0A10Ziq-1">
+        <mxCell id="bHFfbH5_fKz2R0A10Ziq-9" value="ISP A" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="bHFfbH5_fKz2R0A10Ziq-1">
           <mxGeometry x="180" y="140" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bHFfbH5_fKz2R0A10Ziq-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bHFfbH5_fKz2R0A10Ziq-1" source="bHFfbH5_fKz2R0A10Ziq-13" target="bHFfbH5_fKz2R0A10Ziq-15">
