@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T08:51:38.904Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.4" etag="69X4aBscJ5UJKB2tUmdZ" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-13T08:54:36.369Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="BpraQAdxUxUdxb9FTT14" version="24.6.4" type="github">
   <diagram name="Page-1" id="KlMrY2iqDLbIazJT9he0">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EakUhFLTfi6rKzi6XGAz-1" value="Client 1&lt;div&gt;DHCP: 192.168.1.1&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Laptop.svg;" vertex="1" parent="1">
+          <mxGeometry x="210" y="270" width="42" height="42.599999999999994" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
