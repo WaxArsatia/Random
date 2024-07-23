@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-23T06:51:10.444Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="Tv3zVyj1Ye7TsYHF1yPN" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-23T12:09:30.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="sReiqVWtjxp36wjyVij6" version="23.1.2" type="github">
   <diagram name="Halaman-1" id="CJ68KNp0ZR9db8hdcrgI">
     <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,19 +8,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-1" value="Edge 2&lt;br&gt;IP 41" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="1">
-          <mxGeometry x="190" y="230" width="50" height="39" as="geometry" />
+          <mxGeometry x="535" y="230" width="50" height="39" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZLhpSFiTcndYm8eSbJg2-2" target="ZLhpSFiTcndYm8eSbJg2-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-2" value="Edge 1&lt;br&gt;IP 40" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" vertex="1" parent="1">
-          <mxGeometry x="475" y="230" width="50" height="39" as="geometry" />
+          <mxGeometry x="185" y="230" width="50" height="39" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-3" value="Telkom" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="155" y="50" width="120" height="80" as="geometry" />
+          <mxGeometry x="500" y="50" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-4" value="Indosat" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="60" width="120" height="80" as="geometry" />
+          <mxGeometry x="150" y="60" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZLhpSFiTcndYm8eSbJg2-11" value="ETH 2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZLhpSFiTcndYm8eSbJg2-8" target="ZLhpSFiTcndYm8eSbJg2-1">
           <mxGeometry x="-0.772" y="-4" relative="1" as="geometry">
