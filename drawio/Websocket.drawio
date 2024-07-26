@@ -10,7 +10,7 @@
         <mxCell id="1gaI4uT_1AzjA7hx76fX-2" value="User B" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="90" y="410" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1gaI4uT_1AzjA7hx76fX-8" value="Websocket" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+        <mxCell id="1gaI4uT_1AzjA7hx76fX-8" value="Websocket Server&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
           <mxGeometry x="680" y="338" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
         <mxCell id="1gaI4uT_1AzjA7hx76fX-19" value="" style="group" vertex="1" connectable="0" parent="1">
@@ -84,13 +84,13 @@
         <mxCell id="JwtdE9GVqmQsItNdbANv-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ICloXEMcIsM4z0YLZVXx-1" source="JwtdE9GVqmQsItNdbANv-5" target="JwtdE9GVqmQsItNdbANv-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JwtdE9GVqmQsItNdbANv-5" value="VM Oxygen" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="ICloXEMcIsM4z0YLZVXx-1">
+        <mxCell id="JwtdE9GVqmQsItNdbANv-5" value="Websocket Client&lt;div&gt;A&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="ICloXEMcIsM4z0YLZVXx-1">
           <mxGeometry x="211.3" y="560" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
         <mxCell id="JwtdE9GVqmQsItNdbANv-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ICloXEMcIsM4z0YLZVXx-1" source="JwtdE9GVqmQsItNdbANv-6" target="JwtdE9GVqmQsItNdbANv-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JwtdE9GVqmQsItNdbANv-6" value="VM Biznet" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="ICloXEMcIsM4z0YLZVXx-1">
+        <mxCell id="JwtdE9GVqmQsItNdbANv-6" value="Websocket Client&lt;div&gt;B&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="ICloXEMcIsM4z0YLZVXx-1">
           <mxGeometry x="591.3" y="560" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
       </root>
