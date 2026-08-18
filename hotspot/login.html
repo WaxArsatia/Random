@@ -8,7 +8,6 @@
     <meta name="theme-color" content="#0b172a">
     <title>AUL.NET - Masuk WiFi</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/portal.js" defer></script>
 </head>
 <body>
     $(if chap-id)
@@ -19,18 +18,22 @@
         <input type="hidden" name="popup" value="true">
     </form>
     <script src="md5.js"></script>
+    $(endif)
     <script>
-        function doLogin() {
-            if (window.AulPortal && window.aulAuth) {
-                window.aulAuth.syncBeforeSubmit();
+        function submitLogin() {
+            if (!window.AulLogin || !window.AulLogin.prepareSubmit()) {
+                return false;
             }
+            $(if chap-id)
             document.sendin.username.value = document.login.username.value;
             document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
             document.sendin.submit();
             return false;
+            $(else)
+            return true;
+            $(endif)
         }
     </script>
-    $(endif)
 
     <main class="portal-shell">
         <section class="brand-panel" aria-labelledby="brand-heading">
@@ -72,7 +75,7 @@
                 </div>
                 $(endif)
 
-                <form id="login-form" class="auth-form" role="tabpanel" aria-describedby="auth-helper" autocomplete="off" name="login" action="$(link-login-only)" method="post" data-auth-form data-default-mode="voucher" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+                <form id="login-form" class="auth-form" role="tabpanel" aria-describedby="auth-helper" autocomplete="off" name="login" action="$(link-login-only)" method="post" data-auth-form data-default-mode="voucher" onsubmit="return submitLogin()">
                     <input type="hidden" name="dst" value="$(link-orig)">
                     <input type="hidden" name="popup" value="true">
 
@@ -86,8 +89,8 @@
                         <input id="password" name="password" type="hidden" autocomplete="current-password">
                     </div>
 
-                    <button class="primary-button" type="submit">
-                        <span>Hubungkan</span>
+                    <button id="submit-button" class="primary-button" type="submit">
+                        <span id="submit-label">Hubungkan</span>
                         <span aria-hidden="true">&#8599;</span>
                     </button>
                 </form>
@@ -103,6 +106,104 @@
             </div>
         </section>
     </main>
+
+    <script id="aul-auth-controller">
+        (function (root, documentRef) {
+            'use strict';
+
+            var form = documentRef.forms.login;
+            var username = documentRef.getElementById('username');
+            var password = documentRef.getElementById('password');
+            var passwordGroup = documentRef.getElementById('password-group');
+            var usernameLabel = documentRef.getElementById('username-label');
+            var helper = documentRef.getElementById('auth-helper');
+            var submitButton = documentRef.getElementById('submit-button');
+            var submitLabel = documentRef.getElementById('submit-label');
+            var tabs = Array.prototype.slice.call(documentRef.querySelectorAll('[data-mode]'));
+            var currentMode = null;
+            var submitting = false;
+
+            function syncVoucherPassword() {
+                if (currentMode === 'voucher') {
+                    password.value = username.value;
+                }
+            }
+
+            function setMode(mode) {
+                var nextMode = mode === 'member' ? 'member' : 'voucher';
+                var wasVoucher = currentMode === 'voucher';
+                currentMode = nextMode;
+
+                if (nextMode === 'voucher') {
+                    password.type = 'hidden';
+                    password.required = false;
+                    passwordGroup.hidden = true;
+                    usernameLabel.textContent = 'Kode voucher';
+                    helper.textContent = 'Masukkan kode voucher yang Anda miliki.';
+                    syncVoucherPassword();
+                } else {
+                    password.type = 'password';
+                    password.required = true;
+                    passwordGroup.hidden = false;
+                    usernameLabel.textContent = 'Username';
+                    helper.textContent = 'Masukkan username dan password akun Anda.';
+                    if (wasVoucher) {
+                        password.value = '';
+                    }
+                }
+
+                tabs.forEach(function (tab) {
+                    var active = tab.dataset.mode === nextMode;
+                    tab.setAttribute('aria-selected', active ? 'true' : 'false');
+                    tab.tabIndex = active ? 0 : -1;
+                });
+            }
+
+            function prepareSubmit() {
+                if (submitting) {
+                    return false;
+                }
+
+                syncVoucherPassword();
+                submitting = true;
+                form.setAttribute('aria-busy', 'true');
+                submitButton.disabled = true;
+                submitLabel.textContent = 'Menghubungkan...';
+                return true;
+            }
+
+            username.addEventListener('input', syncVoucherPassword);
+            tabs.forEach(function (tab, index) {
+                tab.addEventListener('click', function () {
+                    setMode(tab.dataset.mode);
+                    username.focus();
+                });
+                tab.addEventListener('keydown', function (event) {
+                    var nextIndex;
+                    if (event.key === 'ArrowRight') {
+                        nextIndex = (index + 1) % tabs.length;
+                    } else if (event.key === 'ArrowLeft') {
+                        nextIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    setMode(tabs[nextIndex].dataset.mode);
+                    tabs[nextIndex].focus();
+                });
+            });
+
+            setMode(form.dataset.defaultMode);
+            root.AulLogin = {
+                getMode: function () {
+                    return currentMode;
+                },
+                prepareSubmit: prepareSubmit,
+                setMode: setMode
+            };
+        }(window, document));
+    </script>
 
 </body>
 </html>
