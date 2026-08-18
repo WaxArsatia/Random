@@ -33,6 +33,7 @@ body {
     color: var(--text);
     font-size: 16px;
     line-height: 1.5;
+    overflow-wrap: break-word;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -459,6 +460,16 @@ a:focus-visible {
     font-weight: 700;
 }
 
+.portal-credit {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --page: #091220;
@@ -481,6 +492,64 @@ a:focus-visible {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1100px) {
+    .portal-shell {
+        grid-template-columns: minmax(0, 0.85fr) minmax(400px, 1.15fr);
+    }
+
+    .brand-panel {
+        padding: 36px;
+    }
+
+    .brand-copy {
+        padding: 40px 0;
+    }
+
+    .brand-copy h1 {
+        font-size: clamp(40px, 5vw, 54px);
+    }
+
+    .brand-copy > p:last-child {
+        margin-top: 22px;
+        font-size: 16px;
+    }
+
+    .signal-art {
+        right: 36px;
+        bottom: 88px;
+        transform: scale(0.82);
+        transform-origin: bottom right;
+    }
+
+    .auth-panel {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .portal-shell {
+        display: block;
+    }
+
+    .brand-panel {
+        display: none;
+    }
+
+    .auth-panel {
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 48px;
+    }
+
+    .auth-wrap {
+        width: min(100%, 480px);
+    }
+
+    .mobile-brand {
+        display: inline-flex;
+    }
+}
+
 @media (max-width: 767px) {
     .portal-shell {
         display: block;
@@ -500,6 +569,7 @@ a:focus-visible {
     }
 
     .auth-wrap {
+        width: min(100%, 480px);
         padding-top: 4px;
     }
 
@@ -523,6 +593,85 @@ a:focus-visible {
     .stat-row {
         grid-template-columns: 1fr;
         gap: 4px;
+    }
+}
+
+@media (max-width: 380px) {
+    .auth-panel {
+        padding: 22px 16px 32px;
+    }
+
+    .mobile-brand {
+        margin-bottom: 38px;
+    }
+
+    .section-heading h2,
+    .state-heading h1 {
+        font-size: 28px;
+    }
+
+    .mode-tabs {
+        margin: 26px 0 22px;
+    }
+
+    .state-shell {
+        padding: 10px;
+    }
+
+    .state-card {
+        padding: 24px 18px;
+    }
+
+    .state-card .brand {
+        margin-bottom: 38px;
+    }
+
+    .portal-credit {
+        margin-top: 24px;
+    }
+}
+
+@media (max-height: 700px) and (min-width: 768px) {
+    .brand-panel,
+    .auth-panel {
+        padding: 28px 36px;
+    }
+
+    .brand-copy {
+        padding: 24px 0;
+    }
+
+    .brand-copy h1 {
+        font-size: 42px;
+    }
+
+    .mode-tabs {
+        margin: 22px 0 20px;
+    }
+
+    .state-shell {
+        padding: 16px;
+    }
+
+    .state-card {
+        padding: 28px 36px;
+    }
+
+    .state-card .brand {
+        margin-bottom: 30px;
+    }
+
+    .stats {
+        margin-top: 20px;
+    }
+
+    .stat-row {
+        padding: 11px 0;
+    }
+
+    .portal-credit {
+        margin-top: 20px;
+        padding-top: 14px;
     }
 }
 

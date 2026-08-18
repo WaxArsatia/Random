@@ -136,3 +136,30 @@ test('portal stays self-contained and contains no executable VBScript dropper', 
         assert.doesNotMatch(source, /<(?:script|link|img)\b[^>]+(?:src|href)=["']https?:/i, file);
     }
 });
+
+test('every visible portal page renders the requested copyright credit', () => {
+    const visiblePages = [
+        'login.html',
+        'alogin.html',
+        'error.html',
+        'logout.html',
+        'radvert.html',
+        'status.html',
+    ];
+
+    for (const page of visiblePages) {
+        const html = fs.readFileSync(path.join(root, 'hotspot', page), 'utf8');
+        assert.match(html, /<footer class="portal-credit">\s*&copy; 2026 Denis Arsyatya\s*<\/footer>/, page);
+    }
+});
+
+test('responsive stylesheet defines phone, tablet, and short-screen adaptations', () => {
+    const css = fs.readFileSync(path.join(root, 'hotspot/css/style.css'), 'utf8');
+
+    assert.match(css, /@media\s*\(max-width:\s*767px\)/);
+    assert.match(css, /@media\s*\(min-width:\s*768px\)\s*and\s*\(max-width:\s*1100px\)/);
+    assert.match(css, /@media\s*\(min-width:\s*768px\)\s*and\s*\(max-width:\s*899px\)/);
+    assert.match(css, /@media\s*\(max-width:\s*380px\)/);
+    assert.match(css, /@media\s*\(max-height:\s*700px\)\s*and\s*\(min-width:\s*768px\)/);
+    assert.match(css, /min-height:\s*100dvh/);
+});
