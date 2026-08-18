@@ -1,34 +1,39 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="2; url=$(link-redirect)">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
-    <title>Internet hotspot - Redirect</title>
+    <meta name="theme-color" content="#0b172a">
+    <title>AUL.NET - Terhubung</title>
     <link rel="stylesheet" href="css/style.css">
     <script>
         function startClock() {
             $(if popup == 'true')
-            open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
-        $(endif)
-        location.href = unescape('$(link-redirect-esc)');
+            open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=420,height=620');
+            $(endif)
+            location.href = unescape('$(link-redirect-esc)');
         }
-
-    </script> 
+    </script>
 </head>
-
-<body onLoad="startClock()">
-    <div class="ie-fixMinHeight">
-        <div class="main">
-            <div class="wrap">
-                <h1>You are logged in</h1>
-                <p class="info">If nothing happens, click <a href="$(link-redirect)">here</a></p>
+<body onload="startClock()">
+    <main class="state-shell">
+        <section class="state-card enter" aria-labelledby="state-title">
+            <a class="brand" href="$(link-status)" aria-label="AUL.NET status koneksi">
+                <span class="brand-mark" aria-hidden="true"><span></span></span>
+                <span>AUL.NET</span>
+            </a>
+            <div class="state-icon" aria-hidden="true">&#10003;</div>
+            <div class="state-heading">
+                <h1 id="state-title">Anda sudah terhubung</h1>
+                <p>Kami sedang mengarahkan Anda ke halaman tujuan.</p>
             </div>
-        </div>
-    </div>
+            <div class="state-actions">
+                <a class="primary-button" href="$(link-redirect)"><span>Lanjutkan</span><span aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

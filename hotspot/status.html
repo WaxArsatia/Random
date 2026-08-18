@@ -1,71 +1,73 @@
-<html>
+<!doctype html>
+<html lang="id">
 <head>
-$(if refresh-timeout)
-<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
-$(endif)
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />   
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="expires" content="-1">
-<title>Internet hotspot - Status</title>
-<link rel="stylesheet" href="css/style.css">
-<script>
-
-$(if advert-pending == 'yes')
-    var popup = '';
-    function focusAdvert() {
-	if (window.focus) popup.focus();
-    }
-    function openAdvert() {
-	popup = open('$(link-advert)', 'hotspot_advert', '');
-	setTimeout("focusAdvert()", 1000);
-    }
-$(endif)
-    function openLogout() {
-	if (window.name != 'hotspot_status') return true;
-        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
-	window.close();
-	return false;
-    }
-</script>
-    
+    $(if refresh-timeout)
+    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+    $(endif)
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="theme-color" content="#0b172a">
+    <title>AUL.NET - Status koneksi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(if advert-pending == 'yes')
+        var popup = '';
+        function focusAdvert() {
+            if (window.focus) popup.focus();
+        }
+        function openAdvert() {
+            popup = open('$(link-advert)', 'hotspot_advert', '');
+            setTimeout(focusAdvert, 1000);
+        }
+        $(endif)
+        function openLogout() {
+            if (window.name != 'hotspot_status') return true;
+            open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=420,height=620');
+            window.close();
+            return false;
+        }
+    </script>
 </head>
-<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
-    <div class="ie-fixMinHeight">
-        <div class="main">
-            <div class="wrap">
+<body $(if advert-pending == 'yes') onload="openAdvert()" $(endif)>
+    <main class="state-shell">
+        <section class="state-card enter" aria-labelledby="state-title">
+            <a class="brand" href="$(link-status)" aria-label="AUL.NET status koneksi">
+                <span class="brand-mark" aria-hidden="true"><span></span></span>
+                <span>AUL.NET</span>
+            </a>
+            <div class="state-icon" aria-hidden="true">&#10003;</div>
+            <div class="state-heading">
                 $(if login-by == 'trial')
-                    <h1>Hi, trial user!</h1>
+                <h1 id="state-title">Halo, pengguna trial</h1>
                 $(elif login-by != 'mac')
-                    <h1>Hi, $(username)!</h1>
-                $(endif)                
-
-                <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
-                    <table>
-                        <tr><td>IP address</td><td>$(ip)</td></tr>
-                        <tr><td>Bytes up / down</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
-                    $(if session-time-left)
-                        <tr><td>Connected / left</td><td>$(uptime) / $(session-time-left)</td></tr>
-                    $(else)
-                        <tr><td>Connected</td><td>$(uptime)</td></tr>
-                    $(endif)
-                    $(if blocked == 'yes')
-                        <tr><td>Status</td><td>
-                    <a href="$(link-advert)" target="hotspot_advert">Advertisement required</a></td>
-                        </tr>
-                    $(elif refresh-timeout)
-                        <tr><td>Status refresh</td><td>$(refresh-timeout)</td></tr>
-                    $(endif)
-                        </table>
-                    $(if login-by-mac != 'yes')
-                    <!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
-                    <button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
-                    <!-- end of user manager link -->
-                    <input type="submit" value="Log out">
-                    $(endif)
-                </form>
+                <h1 id="state-title">Halo, $(username)</h1>
+                $(else)
+                <h1 id="state-title">Perangkat terhubung</h1>
+                $(endif)
+                <p>Koneksi internet Anda sedang aktif.</p>
             </div>
-        </div>
-    </div>
+            <dl class="stats">
+                <div class="stat-row"><dt>Alamat IP</dt><dd>$(ip)</dd></div>
+                <div class="stat-row"><dt>Data naik / turun</dt><dd>$(bytes-in-nice) / $(bytes-out-nice)</dd></div>
+                $(if session-time-left)
+                <div class="stat-row"><dt>Aktif / tersisa</dt><dd>$(uptime) / $(session-time-left)</dd></div>
+                $(else)
+                <div class="stat-row"><dt>Durasi aktif</dt><dd>$(uptime)</dd></div>
+                $(endif)
+                $(if blocked == 'yes')
+                <div class="stat-row"><dt>Status</dt><dd><a class="subtle-link" href="$(link-advert)" target="hotspot_advert">Buka iklan untuk melanjutkan</a></dd></div>
+                $(elif refresh-timeout)
+                <div class="stat-row"><dt>Pembaruan status</dt><dd>$(refresh-timeout)</dd></div>
+                $(endif)
+            </dl>
+            $(if login-by-mac != 'yes')
+            <form class="state-actions" action="$(link-logout)" name="logout" onsubmit="return openLogout()">
+                <button class="secondary-button" type="submit"><span>Keluar</span><span aria-hidden="true">&#8599;</span></button>
+            </form>
+            $(endif)
+        </section>
+    </main>
 </body>
 </html>

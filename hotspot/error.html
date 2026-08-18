@@ -1,23 +1,30 @@
-<html>
-
+<!doctype html>
+<html lang="id">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
-    <title>Internet hotspot - Error</title>
+    <meta name="theme-color" content="#0b172a">
+    <title>AUL.NET - Gangguan koneksi</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="ie-fixMinHeight">
-        <div class="main">
-            <div class="wrap">
-                <h1>Hotspot error: $(error)</h1>
-                <p class="info">Log in page: <a href="$(link-login)">$(link-login)</a></p>
+    <main class="state-shell">
+        <section class="state-card enter" aria-labelledby="state-title">
+            <a class="brand" href="$(link-login)" aria-label="AUL.NET halaman login">
+                <span class="brand-mark" aria-hidden="true"><span></span></span>
+                <span>AUL.NET</span>
+            </a>
+            <div class="state-icon is-danger" aria-hidden="true">!</div>
+            <div class="state-heading">
+                <h1 id="state-title">Koneksi mengalami kendala</h1>
+                <p>$(error)</p>
             </div>
-        </div>
-    </div>
+            <div class="state-actions">
+                <a class="primary-button" href="$(link-login)"><span>Kembali ke login</span><span aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>
